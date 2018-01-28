@@ -1,0 +1,59 @@
+/*=============
+COLOR TO USE 
+===============*/
+.color1 {
+	color: red;
+}
+.color2 {
+	color: white;
+}
+.color3 {
+	color: gray;
+}
+/*=============
+CAROUSEL STYLE
+===============*/
+
+/*Image Size for the Carousel*/
+.imageSize {
+	height: 30em;
+	width: auto;
+}
+
+.imageOpacity {
+	opacity: 0.5;
+}
+
+.carousel {
+    position:absolute;
+    top:0;    
+}
+.superpose {
+	background-color: black;
+
+}
+/*Text + button over the carousel*/
+.middleText {
+	position:relative;
+	text-align: center;	
+	margin-top: 10em;
+}
+
+	.middleText h6{
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+/*============
+NAV BAR
+==============*/
+.navbar {
+    position:absolute;
+    top: 6px;
+    z-index:10;
+    background:#fff;
+    width:100%;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+}
