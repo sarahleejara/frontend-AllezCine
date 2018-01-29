@@ -5,9 +5,9 @@
     });
 
     $(window).scroll(function(){
-	posScroll = $(document).scrollTop();
-	if(posScroll >=700)
-		$('#monBouton').fadeIn("slow");
-	else
-		$('#monBouton').fadeOut("slow");
-});
+ 	posScroll = $(document).scrollTop();
+ 	if(posScroll <=700)
+ 		$('#monBouton').fadeOut("slow");
+ 	else
+ 		$('#monBouton').fadeIn("slow");
+ });
