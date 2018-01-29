@@ -54,8 +54,36 @@
     </div>
     <div class="intro container-fluid">
       <i class="fa fa-phone" aria-hidden="true"></i> <span>(+000) 009 455 4088</span>
-      <a href="#">Login</a>
+      <a data-toggle="modal" data-target="#exampleModal">Login</a>
       <a href="#">Register</a>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Début de la box FILMS -->
     <div id="films" class="container">
@@ -99,6 +127,8 @@
       <a href="#">Drama</a>
       <a href="#">Sci-Fi</a>
       <a href="#">Thriller</a>
+
+      <!-- FIRST ROW -->
       <div class="row container">
         <div class="col">
           <img class="container" src="../img/batmanmovie-2017-comedie.jpg" alt="Batman Lego Movie">
@@ -178,211 +208,147 @@
       <a href="#">Drama</a>
       <a href="#">Sci-Fi</a>
       <a href="#">Thriller</a>
-      <div class="card-deck row container">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+      <!-- FIRST ROW -->
+      <div class="row container">
+        <div class="col">
+          <img class="container" src="../img/batmanmovie-2017-comedie.jpg" alt="Batman Lego Movie">
+          <h7 class="">Lego Batman Movie</h7>
+          <p class=""><small>2017 Comédie</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/lesdeuxtours-2002-aventure.jpg" alt="The Two Towers">
+          <h7 class="">Lord of the Ring: The Two Towers</h7>
+          <p class=""><small class="text-muted">2002 Adventure</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/inception-2010-scifi.jpg" alt="Inception">
+          <h7 class="card-title">Inception</h7>
+          <p class="card-text"><small class="text-muted">2010 Sci-Fi</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/intouchables-2011-comedie.jpg" alt="Intouchables">
+          <h7 class="">Intouchables</h7>
+          <p class=""><small class="text-muted">2011 Comédie</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/lepatientanglais-1996-dramatique.jpg" alt="The English patient">
+          <h7 class="">The English patient</h7>
+          <p class=""><small class="text-muted">1996 Drama</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/seven-1995-thriller.jpg" alt="Seven">
+          <h7 class="">Seven</h7>
+          <p class=""><small class="text-muted">1995 Thriller</small></p>
         </div>
       </div>
-      <div class="card-deck row container">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+      <!-- The 2nd row starts here -->
+      <div class="row container">
+        <div class="col">
+          <img class="container" src="../img/batmanmovie-2017-comedie.jpg" alt="Batman Lego Movie">
+          <h7 class="">Lego Batman Movie</h7>
+          <p class=""><small>2017 Comédie</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/lesdeuxtours-2002-aventure.jpg" alt="The Two Towers">
+          <h7 class="">Lord of the Ring: The Two Towers</h7>
+          <p class=""><small class="text-muted">2002 Adventure</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/inception-2010-scifi.jpg" alt="Inception">
+          <h7 class="card-title">Inception</h7>
+          <p class="card-text"><small class="text-muted">2010 Sci-Fi</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/intouchables-2011-comedie.jpg" alt="Intouchables">
+          <h7 class="">Intouchables</h7>
+          <p class=""><small class="text-muted">2011 Comédie</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/lepatientanglais-1996-dramatique.jpg" alt="The English patient">
+          <h7 class="">The English patient</h7>
+          <p class=""><small class="text-muted">1996 Drama</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/seven-1995-thriller.jpg" alt="Seven">
+          <h7 class="">Seven</h7>
+          <p class=""><small class="text-muted">1995 Thriller</small></p>
         </div>
       </div>
+
+      <button type="button" name="button" class="">Plus de films</button>
     </div>
+
+      <!-- Début de la box SHOP -->
     <div id="shop" class="container">
       <h3 class="borderleft">shop movies</h3>
-      <div class="card-deck row container">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+      <!-- FIRST ROW -->
+      <div class="row container">
+        <div class="col">
+          <img class="container" src="../img/batmanmovie-2017-comedie.jpg" alt="Batman Lego Movie">
+          <h7 class="">Lego Batman Movie</h7>
+          <p class=""><small>2017 Comédie</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/lesdeuxtours-2002-aventure.jpg" alt="The Two Towers">
+          <h7 class="">Lord of the Ring: The Two Towers</h7>
+          <p class=""><small class="text-muted">2002 Adventure</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/inception-2010-scifi.jpg" alt="Inception">
+          <h7 class="card-title">Inception</h7>
+          <p class="card-text"><small class="text-muted">2010 Sci-Fi</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/intouchables-2011-comedie.jpg" alt="Intouchables">
+          <h7 class="">Intouchables</h7>
+          <p class=""><small class="text-muted">2011 Comédie</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/lepatientanglais-1996-dramatique.jpg" alt="The English patient">
+          <h7 class="">The English patient</h7>
+          <p class=""><small class="text-muted">1996 Drama</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/seven-1995-thriller.jpg" alt="Seven">
+          <h7 class="">Seven</h7>
+          <p class=""><small class="text-muted">1995 Thriller</small></p>
         </div>
       </div>
-      <div class="card-deck row container">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+      <!-- The 2nd row starts here -->
+      <div class="row container">
+        <div class="col">
+          <img class="container" src="../img/batmanmovie-2017-comedie.jpg" alt="Batman Lego Movie">
+          <h7 class="">Lego Batman Movie</h7>
+          <p class=""><small>2017 Comédie</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/lesdeuxtours-2002-aventure.jpg" alt="The Two Towers">
+          <h7 class="">Lord of the Ring: The Two Towers</h7>
+          <p class=""><small class="text-muted">2002 Adventure</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/inception-2010-scifi.jpg" alt="Inception">
+          <h7 class="card-title">Inception</h7>
+          <p class="card-text"><small class="text-muted">2010 Sci-Fi</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/intouchables-2011-comedie.jpg" alt="Intouchables">
+          <h7 class="">Intouchables</h7>
+          <p class=""><small class="text-muted">2011 Comédie</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/lepatientanglais-1996-dramatique.jpg" alt="The English patient">
+          <h7 class="">The English patient</h7>
+          <p class=""><small class="text-muted">1996 Drama</small></p>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="col">
+          <img class="container" src="../img/seven-1995-thriller.jpg" alt="Seven">
+          <h7 class="">Seven</h7>
+          <p class=""><small class="text-muted">1995 Thriller</small></p>
         </div>
       </div>
     </div>
-    <div id="contactus">
+    <div id="contactus" class="container">
       <h3 class="borderleft">contact us</h3>
     </div>
     <footer></footer>
