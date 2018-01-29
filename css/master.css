@@ -141,7 +141,6 @@ padding-bottom: 10px;
 }
  #monBouton {
   display: fixed;
-  flex-direction: row;
   color: white;
   text-decoration: none;
   right: 200px;

@@ -1,16 +1,13 @@
-$(window).scroll(function() {
-    if ($(window).scrollTop() == 0) {
-        $('#monBouton').fadeOut("fast");
-    } else {
-        if ($('#monBouton').length == 0) {
-            $('body').append('<div id="monBouton"></div>');
-        }
-        $('#monBouton').fadeIn("fast");
-    }
-});
-
-$(function(){
-	$("#monBouton").click(function(){
-    	$("html, body").animate({scrollTop: 0},"slow");
+    $(function(){
+    	$("#monBouton").click(function(){
+        	$("html, body").animate({scrollTop: 0},"slow");
+        });
     });
+
+    $(window).scroll(function(){
+	posScroll = $(document).scrollTop();
+	if(posScroll >=700)
+		$('#monBouton').fadeIn("slow");
+	else
+		$('#monBouton').fadeOut("slow");
 });
