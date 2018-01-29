@@ -78,3 +78,7 @@ p {
 	font-size: 0.9em;
 	border-radius: 1px;
 }
+.loupeIcone {
+	position: absolute;
+	padding-left: 190px;
+}
