@@ -53,12 +53,35 @@
   width: 20%;
   padding-right: 20px;
 }
+.review-movies-footer button {
+  padding: 5px;
+  margin: 0px;
+}
 .latest-movies {
+  display: flex;
+  flex-direction: column;
   width: 20%;
   padding-right: 20px;
+  font-size: 10px;
+  flex-wrap: wrap;
+}
+.latest-movies img {
+  display: flex;
+  flex-direction: row;
+  width: 80px;
+  height: 50px;
+  padding: 5px;
+}
+.img-latest-movies {
+  display: flex;
+  flex-direction: row;
 }
 .allez-cine {
   width: 20%;
+}
+.allez-cine img {
+  width: 200px;
+  height: 200px;
 }
 .container-footer h4 {
 color: white;
@@ -114,14 +137,18 @@ padding-bottom: 10px;
     flex-direction: row;
     text-align: center;
     align-items: center;
+    margin-left: 550px;
 }
- #fleche {
-  display: flex;
+ #monBouton {
+  display: fixed;
   flex-direction: row;
   color: white;
   text-decoration: none;
-  justify-content: flex-end;
-
+  right: 200px;
+  border-radius: 50%;
+  border: 2px red solid;
+  background-color: black;
+  margin-left: 500px;
 }
 
 .sociaux {

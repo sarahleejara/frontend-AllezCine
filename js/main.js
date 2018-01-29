@@ -1,20 +1,16 @@
-jQuery(document).ready(function() {
-  var duration = 500;
-  jQuery(window).scroll(function() {
-    if (jQuery(this).scrollTop() > 100) {
-      // Si un défillement de 100 pixels ou plus.
-      // Ajoute le bouton
-      jQuery('.cRetour').fadeIn(duration);
+$(window).scroll(function() {
+    if ($(window).scrollTop() == 0) {
+        $('#monBouton').fadeOut("fast");
     } else {
-      // Sinon enlève le bouton
-      jQuery('.cRetour').fadeOut(duration);
+        if ($('#monBouton').length == 0) {
+            $('body').append('<div id="monBouton"></div>');
+        }
+        $('#monBouton').fadeIn("fast");
     }
-  });
+});
 
-  jQuery('.cRetour').click(function(event) {
-    // Un clic provoque le retour en haut animé.
-    event.preventDefault();
-    jQuery('html, body').animate({scrollTop: 0}, duration);
-    return false;
-  })
+$(function(){
+	$("#monBouton").click(function(){
+    	$("html, body").animate({scrollTop: 0},"slow");
+    });
 });
