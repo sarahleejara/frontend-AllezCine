@@ -36,7 +36,7 @@ CAROUSEL STYLE
 .middleText {
 	position:relative;
 	text-align: center;	
-	margin-top: 10em;
+	margin-top: 12em;
 }
 
 	.middleText h6{
@@ -56,4 +56,25 @@ NAV BAR
 h1 {
 	margin: 0;
 	padding: 0;
+}
+
+.contactBtn {
+	padding-left: 14em;
+}
+.homeBtn {
+	margin-left: 5em;
+}
+.genreBtn {
+	border-radius: 1px;
+}
+.searchBar {
+	margin-right: 3em;
+}
+p {
+	font-size: 0.9em;
+}
+.trailerBtn {
+	padding: 0.3em 0.5em;
+	font-size: 0.9em;
+	border-radius: 1px;
 }
