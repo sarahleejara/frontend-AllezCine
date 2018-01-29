@@ -67,8 +67,8 @@ h1 {
 .genreBtn {
 	border-radius: 1px;
 }
-.searchBar {
-	margin-right: 3em;
+.searchBarPosition {
+	margin-right: 1.5em;
 }
 p {
 	font-size: 0.9em;
@@ -80,5 +80,16 @@ p {
 }
 .loupeIcone {
 	position: absolute;
-	padding-left: 190px;
+	padding-left: 240px;
 }
+.searchBar {
+	border-radius: 50px;
+	padding: 2px 35px; 
+}
+
+/*============
+MEDIA QUERIES
+==============*/ 
+
+
+
