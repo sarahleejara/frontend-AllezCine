@@ -4,97 +4,13 @@
     <meta charset= "utf-8">
     <title>AllezCiné</title>
     <link rel="stylesheet" media="screen" href="media_queries.css" type="text/css" />
-<link rel="stylesheet" media="screen(700px)" href="media_queries.css" type="text/css" />
+    <link rel="stylesheet" media="screen(700px)" href="media_queries.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/master.css">
   </head>
   <body>
     <header>
-  <!-- Jumbotron / Slider -->
-      <div class="jumbotron container-fluid">
-       <div class="row">
-        <h1 class="col display-4">AllezCine!</h1> <!--Logo coin supérieur Droit-->
-  <!-- Nav Bar    -->
-      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-  <button type="button" class="btn btn-danger">     </button>
-  <button type="button" class="btn btn-danger">     </button>
-
-  <div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown
-    </button>
-    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <a class="dropdown-item" href="#">Dropdown link</a>
-      <a class="dropdown-item" href="#">Dropdown link</a>
-    </div>
-  </div>
-</div>
-  <!-- Search Bar -->
-          <form class="col form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Recherche " aria-label="Search">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </form>
-        </div>
-        <div class="row">
-          <h1 class="col display-4 text-center">Latest online movies</h1>
-        </div>
-        <div class="row">
-          <h4 class="col text-center">In space no one can ear you scream</h4>
-        </div>
-        <div class="row">
-          <a class="col btn btn-danger btn-lg text-center" href="#" style="margin-left:600px; margin-right: 600px" role="button">Watch trailer</a>
-        </div>
-          
-        <div class="row">
-          <div id="col carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-        </div>  
-            <div class="carousel-inner">
-              <!-- <div class="carousel-item active"> -->
-                <img class="d-block w-100" src="..." alt="First slide">
-              </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="..." alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="..." alt="Third slide">
-        </div>
-            </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> 
-        </a>
-        </div>
-     
-    <!-- button -->
-      
-        </p>
-    </div>
-    </header>
-  
-    <div id="social"></div>
-    <div id="films"></div>
-    <div id="movies" class="container">
-      <div class="card-deck">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-
 <!--================================
 NAVBAR
 ====================================-->
@@ -189,10 +105,120 @@ MIDDLE TEXT
         </p>
           <a class="btn btn-danger btn-lg trailerBtn text-uppercase" href="#role="button">Watch trailer</a>
     </div>
- 
-    <footer></footer> 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+    
+
+  <!-- FOOTER -->
+  <footer>
+    <!-- formulaire et bouton subscribe -->
+    <div class="subscribe">
+      <h3>subscribe to us</h3>
+      <form>
+        <div>
+          <label for="subscribe"></label>
+          <input type="email" id="subscribe" value="Enter your email..." />
+          <button type="button" name="subscribe">SUBSCRIBE</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="container-footer">
+      <div class="release-footer">
+        <h4>Release</h4>
+        <ul>
+          <li>2016</li>
+          <li>2015</li>
+          <li>2014</li>
+          <li>2013</li>
+          <li>2012</li>
+          <li>2011</li>
+        </ul>
+      </div>
+      <div class="movies-footer">
+        <h4>Movies</h4>
+        <ul>
+          <li>ADVENTURE</li>
+          <li>COMEDY</li>
+          <li>FANTASY</li>
+          <li>ACTION</li>
+          <li>MOVIES</li>
+          <li>HORROR</li>
+        </ul>
+      </div>
+      <div class="review-movies-footer">
+        <h4>Reviews Movies</h4>
+        <button type="button" name="Comedy">Comedy</button>
+        <button type="button" name="Horror">Horror</button>
+        <button type="button" name="Historical">Historical</button>
+        <button type="button" name="Romantic">Romantic</button>
+        <button type="button" name="Love">Love</button>
+        <button type="button" name="Action">Action</button>
+        <button type="button" name="Reviews">Reviews</button>
+        <button type="button" name="Comedy">Comedy</button>
+        <button type="button" name="Horror">Horror</button>
+        <button type="button" name="Historical">Historical</button>
+        <button type="button" name="Love">Love</button>
+        <button type="button" name="Comedy">Comedy</button>
+        <button type="button" name="Horror">Horror</button>
+        <button type="button" name="Historical">Historical</button>
+      </div>
+      <div class="latest-movies">
+        <h4>Latest Movies</h4>
+        <div class="img-latest-movies">
+          <img src="../img/intouchables-2011-comedie.jpg" alt="">
+          <p>blablabla</p>
+        </div>
+        <div class="img-latest-movies">
+          <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
+          <p>blablabla</p>
+        </div>
+        <div class="img-latest-movies">
+          <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
+          <p>blablabla</p>
+        </div>
+        <div class="img-latest-movies">
+          <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
+          <p>blablabla</p>
+        </div>
+      </div>
+
+      <div class="allez-cine">
+        <h6><div id="red">Allez</div>Cine</h6>
+        <img src="../img/batmanmovie-2017-comedie.jpg" alt="image-film">
+      </div>
+    </div>
+
+
+
+    <div class="connect-us">
+
+      <h5>Connect us</h5>
+
+
+      <div class="container-sociaux">
+        <div class="sociaux">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </div>
+        <div class="sociaux">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+        <div class="sociaux">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+        <div class="sociaux">
+          <i class="fa fa-google-plus" aria-hidden="true"></i>
+        </div>
+        <div class="sociaux">
+          <i class="fa fa-google-plus" aria-hidden="true"></i>
+        </div>
+        <div><button id="monBouton"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></button></div>
+      </div>
+
+
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="../js/main.js"></script>
+</body>
+
 </html>

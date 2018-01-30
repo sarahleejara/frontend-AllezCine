@@ -1,3 +1,4 @@
+
 /*=============
 COLOR TO USE 
 ===============*/
@@ -87,3 +88,184 @@ p {
 	padding: 2px 35px; 
 }
 
+/*=================================*/
+
+/*FOOTER CSS*/
+/* subscribe form et bouton */
+.subscribe {
+  text-align: center;
+  background-color: black;
+  padding-bottom: 25px;
+  padding-top: 100px;
+}
+.subscribe h3 {
+  text-transform: uppercase;
+  color: red;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.subscribe button {
+  font-size: 14px;
+  background-color: red;
+  border: red;
+  color: white;
+
+}
+.subscribe input {
+  width: 300px;
+  color: grey;
+  font-size: 10px;
+}
+/* container */
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-bottom: darkgrey 2px solid;
+}
+.release-footer {
+  width: 20%;
+  padding-right: 20px;
+}
+.release-footer ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.movies-footer {
+  width: 20%;
+  padding-right: 20px;
+}
+.movies-footer ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.review-movies-footer {
+  width: 20%;
+  padding-right: 20px;
+}
+.review-movies-footer button {
+  padding: 5px;
+  margin: 0px;
+}
+.latest-movies {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding-right: 20px;
+  font-size: 10px;
+  flex-wrap: wrap;
+}
+.latest-movies img {
+  display: flex;
+  flex-direction: row;
+  width: 80px;
+  height: 50px;
+  padding: 5px;
+}
+.img-latest-movies {
+  display: flex;
+  flex-direction: row;
+}
+.allez-cine {
+  width: 20%;
+}
+.allez-cine img {
+  width: 200px;
+  height: 200px;
+}
+.container-footer h4 {
+color: white;
+font-size: 18px;
+border-bottom: darkgrey 2px solid;
+padding-bottom: 10px;
+}
+.container-footer li {
+  font-size: 12px;
+}
+
+.review-movies-footer button {
+  background-color: rgba(192,192,192,0.2);
+  opacity: 50%;
+  font-size: 10px;
+  color: white;
+  border: black 1px solid;
+}
+#red {
+  color: red;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.allez-cine h6 {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  border-bottom: darkgrey 2px solid;
+}
+/* contact réseaux sociaux  */
+.connect-us {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding-top: 50px;
+  color: white;
+  padding-bottom: 20px;
+
+}
+.connect-us h5 {
+  width: 100%;
+  text-align: center;
+  border-top: darkgrey 2px solid;
+  font-size: 23px;
+}
+.container-sociaux {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-left: 3.5%;
+    flex-wrap: wrap;
+}
+ #monBouton {
+  display: fixed;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 2px red solid;
+  background-color: black;
+  margin-left: 1100%;
+}
+
+.sociaux {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border: white 1px solid;
+  width: 10px;
+  height: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 450px) {
+  #monBouton {
+    margin-left: 0px;
+  }
+   .container-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .review-movies-footer {
+    display: none;
+  }
+  .allez-cine img {
+    display: none;
+  }
+}
