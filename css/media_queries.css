@@ -1,0 +1,31 @@
+/*============
+MEDIA QUERIES
+==============*/ 
+
+@media (max-width: 700px){
+	.navBar {
+		display: inline-block;
+	}
+}
+
+
+/*============
+MEDIA QUERIES FOOTER
+==============*/
+
+@media (max-width: 450px) {
+#monBouton {
+margin-left: 0px;
+}
+.container-footer {
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+.review-movies-footer {
+display: none;
+}
+.allez-cine img {
+display: none;
+}
+}
