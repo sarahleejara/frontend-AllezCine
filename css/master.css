@@ -144,7 +144,6 @@ padding-bottom: 10px;
   display: fixed;
   color: white;
   text-decoration: none;
-  right: 200px;
   border-radius: 50%;
   border: 2px red solid;
   background-color: black;
@@ -162,6 +161,19 @@ padding-bottom: 10px;
   align-items: center;
   text-align: center;
 }
-@media (min-width: 450px) {
-  
+@media (max-width: 450px) {
+  #monBouton {
+    margin-left: 0px;
+  }
+   .container-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .review-movies-footer {
+    display: none;
+  }
+  .allez-cine img {
+    display: none;
+  }
 }

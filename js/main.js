@@ -6,8 +6,8 @@
 
     $(window).scroll(function(){
  	posScroll = $(document).scrollTop();
- 	if(posScroll <=700)
- 		$('#monBouton').fadeOut("slow");
- 	else
+ 	if(posScroll >=300)
  		$('#monBouton').fadeIn("slow");
+ 	else
+    $('#monBouton').fadeOut("slow");
  });
