@@ -1,6 +1,5 @@
-
 /*=============
-COLOR TO USE 
+COLOR TO USE
 ===============*/
 .color1 {
 	color: red;
@@ -27,7 +26,7 @@ CAROUSEL STYLE
 
 .carousel {
     position:absolute;
-    top:0;    
+    top:0;
 }
 .superpose {
 	background-color: black;
@@ -36,7 +35,7 @@ CAROUSEL STYLE
 /*Text + button over the carousel*/
 .middleText {
 	position:relative;
-	text-align: center;	
+	text-align: center;
 	margin-top: 12em;
 }
 
@@ -85,7 +84,7 @@ p {
 }
 .searchBar {
 	border-radius: 50px;
-	padding: 2px 35px; 
+	padding: 2px 35px;
 }
 
 /*=================================*/
@@ -268,4 +267,147 @@ padding-bottom: 10px;
   .allez-cine img {
     display: none;
   }
+
+/*CODE SARAH LEE*/
+
+/*REUSABLE CODE*/
+
+.borderleft{
+  border-left: 5px solid #EF3054;
+  padding: 5px 10px;
+}
+.pad-tb-20{
+  padding: 20px 0px;
+}
+/*STYLING CODE*/
+
+h3{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.intro{
+  background-color: #EF3054;
+  color: #FFF;
+  padding: 7px;
+  padding-left: 20px;
+  font-size: 12px;
+}
+.intro a {
+  background-color: black;
+  color: #FFF;
+  padding: 5px;
+}
+/*Movie GENRE*/
+.comedie{
+
+}
+.thriller{
+
+}
+.sci-fi{
+
+}
+.drama{
+
+}
+.adventure{
+
+}
+
+/*RESEAUX SOCIAUX*/
+
+#social{
+  left: 0;
+  position: fixed;
+  top: 150px;
+}
+
+#social {
+  position: fixed;
+  top: 20px;
+}
+
+#social ul {
+  padding: 0px;
+  -webkit-transform: translate(-270px, 0);
+  -moz-transform: translate(-270px, 0);
+  -ms-transform: translate(-270px, 0);
+  -o-transform: translate(-270px, 0);
+  transform: translate(-270px, 0);
+}
+#social ul li {
+  display: block;
+  margin: 10px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  -webkit-border-radius: 0 30px 30px 0;
+  -moz-border-radius: 0 30px 30px 0;
+  border-radius: 0 30px 30px 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+#social ul li:hover {
+  -webkit-transform: translate(110px, 0);
+  -moz-transform: translate(110px, 0);
+  -ms-transform: translate(110px, 0);
+  -o-transform: translate(110px, 0);
+  transform: translate(110px, 0);
+  background: rgba(255, 255, 255, 0.4);
+}
+#social ul li:hover a {
+  color: #000;
+}
+#social ul li:hover i {
+  color: #fff;
+  background: black;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+#social ul li i {
+  margin-left: 10px;
+  color: #000;
+  background: #fff;
+  padding: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+/*FILMS*/
+.border{
+  border-radius: 5px;
+}
+#films{
+  padding: 20px;
+}
+#films h7, p{
+  margin: 0;
+}
+#movies{
+
+}
+
+#series{
+
+}
+
+#shop{
+
+}
+
+#contactus{
+
 }

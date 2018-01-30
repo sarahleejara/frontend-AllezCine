@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+<<<<<<< HEAD
     <header>
       <!--================================ NAVBAR ====================================-->
       <!-- ALLERCINE! Logo =================-->
@@ -102,119 +104,432 @@
         <a class="btn btn-danger btn-lg trailerBtn text-uppercase" href="#" role="button"> Watch trailer </a>
       </div>
 
-
-  <!-- FOOTER -->
-  <footer>
-    <!-- formulaire et bouton subscribe -->
-    <div class="subscribe">
-      <h3>subscribe to us</h3>
-      <form>
-        <div>
-          <label for="subscribe"></label>
-          <input type="email" id="subscribe" value="Enter your email..." />
-          <button type="button" name="subscribe">SUBSCRIBE</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Welcome</h5>
+          </div>
+          <div class="modal-body">
+            Please enter your age.
+          </div>
+          <div class="modal-footer">
+            <input type="number" name="yourage" required id="Age">
+            <input type="submit" value="Submit" id="submitage">
+          </div>
         </div>
-      </form>
-    </div>
-
-    <div class="container-footer">
-      <div class="release-footer">
-        <h4>Release</h4>
-        <ul>
-          <li>2016</li>
-          <li>2015</li>
-          <li>2014</li>
-          <li>2013</li>
-          <li>2012</li>
-          <li>2011</li>
-        </ul>
-      </div>
-      <div class="movies-footer">
-        <h4>Movies</h4>
-        <ul>
-          <li>ADVENTURE</li>
-          <li>COMEDY</li>
-          <li>FANTASY</li>
-          <li>ACTION</li>
-          <li>MOVIES</li>
-          <li>HORROR</li>
-        </ul>
-      </div>
-      <div class="review-movies-footer">
-        <h4>Reviews Movies</h4>
-        <button type="button" name="Comedy">Comedy</button>
-        <button type="button" name="Horror">Horror</button>
-        <button type="button" name="Historical">Historical</button>
-        <button type="button" name="Romantic">Romantic</button>
-        <button type="button" name="Love">Love</button>
-        <button type="button" name="Action">Action</button>
-        <button type="button" name="Reviews">Reviews</button>
-        <button type="button" name="Comedy">Comedy</button>
-        <button type="button" name="Horror">Horror</button>
-        <button type="button" name="Historical">Historical</button>
-        <button type="button" name="Love">Love</button>
-        <button type="button" name="Comedy">Comedy</button>
-        <button type="button" name="Horror">Horror</button>
-        <button type="button" name="Historical">Historical</button>
-      </div>
-      <div class="latest-movies">
-        <h4>Latest Movies</h4>
-        <div class="img-latest-movies">
-          <img src="../img/intouchables-2011-comedie.jpg" alt="">
-          <p>blablabla</p>
-        </div>
-        <div class="img-latest-movies">
-          <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
-          <p>blablabla</p>
-        </div>
-        <div class="img-latest-movies">
-          <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
-          <p>blablabla</p>
-        </div>
-        <div class="img-latest-movies">
-          <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
-          <p>blablabla</p>
-        </div>
-      </div>
-
-      <div class="allez-cine">
-        <h6><div id="red">Allez</div>Cine</h6>
-        <img src="../img/batmanmovie-2017-comedie.jpg" alt="image-film">
       </div>
     </div>
-
-
-
-    <div class="connect-us">
-
-      <h5>Connect us</h5>
-
-
-      <div class="container-sociaux">
-        <div class="sociaux">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
+    <div id="social">
+      <ul>
+        <li><a href="https://facebook.com/">Facebook <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="http://google.com/">Google <i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="intro container-fluid">
+      <i class="fa fa-phone" aria-hidden="true"></i> <span>(+000) 009 455 4088</span>
+      <a data-toggle="modal" data-target="#exampleModal">Login</a>
+      <a href="#">Register</a>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
         </div>
-        <div class="sociaux">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
+      </div>
+    </div>
+    <!-- Début de la box FILMS -->
+    <div id="films" class="container">
+      <div class="container d-flex justify-content-center">
+        <div class="row container col-10 border pad-tb-20">
+          <div class="col">
+            <img class="container" src="../img/batmanmovie-2017-comedie.jpg" alt="Batman Lego Movie">
+            <h7 class="">Lego Batman Movie</h7>
+            <p class=""><small>2017 Comédie</small></p>
+          </div>
+          <div class="col">
+            <img class="container" src="../img/lesdeuxtours-2002-aventure.jpg" alt="The Two Towers">
+            <h7 class="">Lord of the Ring: The Two Towers</h7>
+            <p class=""><small class="text-muted">2002 Adventure</small></p>
+          </div>
+          <div class="col">
+            <img class="container" src="../img/inception-2010-scifi.jpg" alt="Inception">
+            <h7 class="card-title">Inception</h7>
+            <p class="card-text"><small class="text-muted">2010 Sci-Fi</small></p>
+          </div>
+          <div class="col">
+            <img class="container" src="../img/intouchables-2011-comedie.jpg" alt="Intouchables">
+            <h7 class="">Intouchables</h7>
+            <p class=""><small class="text-muted">2011 Comédie</small></p>
+          </div>
+          <div class="col">
+            <img class="container" src="../img/lepatientanglais-1996-dramatique.jpg" alt="The English patient">
+            <h7 class="">The English patient</h7>
+            <p class=""><small class="text-muted">1996 Drama</small></p>
+          </div>
         </div>
-        <div class="sociaux">
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <!-- Début de la box FEATURED MOVIES -->
+    <div id="movies" class="container">
+      <h3 class="borderleft">featured movies</h3>
+      <a href="#">All</a>
+      <a href="#">Adventure</a>
+      <a href="#">Comedie</a>
+      <a href="#">Drama</a>
+      <a href="#">Sci-Fi</a>
+      <a href="#">Thriller</a>
+
+      <!-- FIRST ROW -->
+      <div class="row container">
+        <div class="col">
+          <img class="container" src="../img/batmanmovie-2017-comedie.jpg" alt="Batman Lego Movie">
+          <h7 class="">Lego Batman Movie</h7>
+          <p class=""><small>2017 Comédie</small></p>
         </div>
-        <div class="sociaux">
-          <i class="fa fa-google-plus" aria-hidden="true"></i>
+        <div class="col">
+          <img class="container" src="../img/lesdeuxtours-2002-aventure.jpg" alt="The Two Towers">
+          <h7 class="">Lord of the Ring: The Two Towers</h7>
+          <p class=""><small class="text-muted">2002 Adventure</small></p>
         </div>
-        <div class="sociaux">
-          <i class="fa fa-google-plus" aria-hidden="true"></i>
+        <div class="col">
+          <img class="container" src="../img/inception-2010-scifi.jpg" alt="Inception">
+          <h7 class="card-title">Inception</h7>
+          <p class="card-text"><small class="text-muted">2010 Sci-Fi</small></p>
         </div>
-        <div><button id="monBouton"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></button></div>
+        <div class="col">
+          <img class="container" src="../img/intouchables-2011-comedie.jpg" alt="Intouchables">
+          <h7 class="">Intouchables</h7>
+          <p class=""><small class="text-muted">2011 Comédie</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/lepatientanglais-1996-dramatique.jpg" alt="The English patient">
+          <h7 class="">The English patient</h7>
+          <p class=""><small class="text-muted">1996 Drama</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/seven-1995-thriller.jpg" alt="Seven">
+          <h7 class="">Seven</h7>
+          <p class=""><small class="text-muted">1995 Thriller</small></p>
+        </div>
+      </div>
+      <!-- The 2nd row starts here -->
+      <div class="row container">
+        <div class="col">
+          <img class="container" src="../img/batmanmovie-2017-comedie.jpg" alt="Batman Lego Movie">
+          <h7 class="">Lego Batman Movie</h7>
+          <p class=""><small>2017 Comédie</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/lesdeuxtours-2002-aventure.jpg" alt="The Two Towers">
+          <h7 class="">Lord of the Ring: The Two Towers</h7>
+          <p class=""><small class="text-muted">2002 Adventure</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/inception-2010-scifi.jpg" alt="Inception">
+          <h7 class="card-title">Inception</h7>
+          <p class="card-text"><small class="text-muted">2010 Sci-Fi</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/intouchables-2011-comedie.jpg" alt="Intouchables">
+          <h7 class="">Intouchables</h7>
+          <p class=""><small class="text-muted">2011 Comédie</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/lepatientanglais-1996-dramatique.jpg" alt="The English patient">
+          <h7 class="">The English patient</h7>
+          <p class=""><small class="text-muted">1996 Drama</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/seven-1995-thriller.jpg" alt="Seven">
+          <h7 class="">Seven</h7>
+          <p class=""><small class="text-muted">1995 Thriller</small></p>
+        </div>
       </div>
 
+      <button type="button" name="button" class="">Plus de films</button>
 
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="../js/main.js"></script>
-</body>
+    </div>
 
+    <!-- Début de la box FEATURED SERIES TV -->
+    <div id="series" class="container">
+      <h3 class="borderleft">featured series tv</h3>
+      <a href="#">All</a>
+      <a href="#">Adventure</a>
+      <a href="#">Comedie</a>
+      <a href="#">Drama</a>
+      <a href="#">Sci-Fi</a>
+      <a href="#">Thriller</a>
+      <!-- FIRST ROW -->
+      <div class="row container">
+        <div class="col">
+          <img class="container" src="../img/batmanmovie-2017-comedie.jpg" alt="Batman Lego Movie">
+          <h7 class="">Lego Batman Movie</h7>
+          <p class=""><small>2017 Comédie</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/lesdeuxtours-2002-aventure.jpg" alt="The Two Towers">
+          <h7 class="">Lord of the Ring: The Two Towers</h7>
+          <p class=""><small class="text-muted">2002 Adventure</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/inception-2010-scifi.jpg" alt="Inception">
+          <h7 class="card-title">Inception</h7>
+          <p class="card-text"><small class="text-muted">2010 Sci-Fi</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/intouchables-2011-comedie.jpg" alt="Intouchables">
+          <h7 class="">Intouchables</h7>
+          <p class=""><small class="text-muted">2011 Comédie</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/lepatientanglais-1996-dramatique.jpg" alt="The English patient">
+          <h7 class="">The English patient</h7>
+          <p class=""><small class="text-muted">1996 Drama</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/seven-1995-thriller.jpg" alt="Seven">
+          <h7 class="">Seven</h7>
+          <p class=""><small class="text-muted">1995 Thriller</small></p>
+        </div>
+      </div>
+      <!-- The 2nd row starts here -->
+      <div class="row container">
+        <div class="col">
+          <img class="container" src="../img/batmanmovie-2017-comedie.jpg" alt="Batman Lego Movie">
+          <h7 class="">Lego Batman Movie</h7>
+          <p class=""><small>2017 Comédie</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/lesdeuxtours-2002-aventure.jpg" alt="The Two Towers">
+          <h7 class="">Lord of the Ring: The Two Towers</h7>
+          <p class=""><small class="text-muted">2002 Adventure</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/inception-2010-scifi.jpg" alt="Inception">
+          <h7 class="card-title">Inception</h7>
+          <p class="card-text"><small class="text-muted">2010 Sci-Fi</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/intouchables-2011-comedie.jpg" alt="Intouchables">
+          <h7 class="">Intouchables</h7>
+          <p class=""><small class="text-muted">2011 Comédie</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/lepatientanglais-1996-dramatique.jpg" alt="The English patient">
+          <h7 class="">The English patient</h7>
+          <p class=""><small class="text-muted">1996 Drama</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/seven-1995-thriller.jpg" alt="Seven">
+          <h7 class="">Seven</h7>
+          <p class=""><small class="text-muted">1995 Thriller</small></p>
+        </div>
+      </div>
+
+      <button type="button" name="button" class="">Plus de films</button>
+    </div>
+
+      <!-- Début de la box SHOP -->
+    <div id="shop" class="container">
+      <h3 class="borderleft">shop movies</h3>
+      <!-- FIRST ROW -->
+      <div class="row container">
+        <div class="col">
+          <img class="container" src="../img/batmanmovie-2017-comedie.jpg" alt="Batman Lego Movie">
+          <h7 class="">Lego Batman Movie</h7>
+          <p class=""><small>2017 Comédie</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/lesdeuxtours-2002-aventure.jpg" alt="The Two Towers">
+          <h7 class="">Lord of the Ring: The Two Towers</h7>
+          <p class=""><small class="text-muted">2002 Adventure</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/inception-2010-scifi.jpg" alt="Inception">
+          <h7 class="card-title">Inception</h7>
+          <p class="card-text"><small class="text-muted">2010 Sci-Fi</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/intouchables-2011-comedie.jpg" alt="Intouchables">
+          <h7 class="">Intouchables</h7>
+          <p class=""><small class="text-muted">2011 Comédie</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/lepatientanglais-1996-dramatique.jpg" alt="The English patient">
+          <h7 class="">The English patient</h7>
+          <p class=""><small class="text-muted">1996 Drama</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/seven-1995-thriller.jpg" alt="Seven">
+          <h7 class="">Seven</h7>
+          <p class=""><small class="text-muted">1995 Thriller</small></p>
+        </div>
+      </div>
+      <!-- The 2nd row starts here -->
+      <div class="row container">
+        <div class="col">
+          <img class="container" src="../img/batmanmovie-2017-comedie.jpg" alt="Batman Lego Movie">
+          <h7 class="">Lego Batman Movie</h7>
+          <p class=""><small>2017 Comédie</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/lesdeuxtours-2002-aventure.jpg" alt="The Two Towers">
+          <h7 class="">Lord of the Ring: The Two Towers</h7>
+          <p class=""><small class="text-muted">2002 Adventure</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/inception-2010-scifi.jpg" alt="Inception">
+          <h7 class="card-title">Inception</h7>
+          <p class="card-text"><small class="text-muted">2010 Sci-Fi</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/intouchables-2011-comedie.jpg" alt="Intouchables">
+          <h7 class="">Intouchables</h7>
+          <p class=""><small class="text-muted">2011 Comédie</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/lepatientanglais-1996-dramatique.jpg" alt="The English patient">
+          <h7 class="">The English patient</h7>
+          <p class=""><small class="text-muted">1996 Drama</small></p>
+        </div>
+        <div class="col">
+          <img class="container" src="../img/seven-1995-thriller.jpg" alt="Seven">
+          <h7 class="">Seven</h7>
+          <p class=""><small class="text-muted">1995 Thriller</small></p>
+        </div>
+      </div>
+    </div>
+    <div id="contactus" class="container">
+      <h3 class="borderleft">contact us</h3>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <!-- formulaire et bouton subscribe -->
+      <div class="subscribe">
+        <h3>subscribe to us</h3>
+        <form>
+          <div>
+            <label for="subscribe"></label>
+            <input type="email" id="subscribe" value="Enter your email..." />
+            <button type="button" name="subscribe">SUBSCRIBE</button>
+          </div>
+        </form>
+      </div>
+      <div class="container-footer">
+        <div class="release-footer">
+          <h4>Release</h4>
+          <ul>
+            <li>2016</li>
+            <li>2015</li>
+            <li>2014</li>
+            <li>2013</li>
+            <li>2012</li>
+            <li>2011</li>
+          </ul>
+        </div>
+        <div class="movies-footer">
+          <h4>Movies</h4>
+          <ul>
+            <li>ADVENTURE</li>
+            <li>COMEDY</li>
+            <li>FANTASY</li>
+            <li>ACTION</li>
+            <li>MOVIES</li>
+            <li>HORROR</li>
+          </ul>
+        </div>
+        <div class="review-movies-footer">
+          <h4>Reviews Movies</h4>
+          <button type="button" name="Comedy">Comedy</button>
+          <button type="button" name="Horror">Horror</button>
+          <button type="button" name="Historical">Historical</button>
+          <button type="button" name="Romantic">Romantic</button>
+          <button type="button" name="Love">Love</button>
+          <button type="button" name="Action">Action</button>
+          <button type="button" name="Reviews">Reviews</button>
+          <button type="button" name="Comedy">Comedy</button>
+          <button type="button" name="Horror">Horror</button>
+          <button type="button" name="Historical">Historical</button>
+          <button type="button" name="Love">Love</button>
+          <button type="button" name="Comedy">Comedy</button>
+          <button type="button" name="Horror">Horror</button>
+          <button type="button" name="Historical">Historical</button>
+        </div>
+        <div class="latest-movies">
+          <h4>Latest Movies</h4>
+          <div class="img-latest-movies">
+            <img src="../img/intouchables-2011-comedie.jpg" alt="">
+            <p>blablabla</p>
+          </div>
+          <div class="img-latest-movies">
+            <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
+            <p>blablabla</p>
+          </div>
+          <div class="img-latest-movies">
+            <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
+            <p>blablabla</p>
+          </div>
+          <div class="img-latest-movies">
+            <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
+            <p>blablabla</p>
+          </div>
+        </div>
+        <div class="allez-cine">
+          <h6><div id="red">Allez</div>Cine</h6>
+          <img src="../img/batmanmovie-2017-comedie.jpg" alt="image-film">
+        </div>
+      </div>
+      <div class="connect-us">
+        <h5>Connect us</h5>
+        <div class="container-sociaux">
+          <div class="sociaux">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </div>
+          <div class="sociaux">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+          <div class="sociaux">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </div>
+          <div class="sociaux">
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+          </div>
+          <div class="sociaux">
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+          </div>
+          <div><button id="monBouton"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></button></div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+  </body>
 </html>
