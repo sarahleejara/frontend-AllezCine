@@ -1,0 +1,89 @@
+/*=============
+COLOR TO USE 
+===============*/
+.color1 {
+	color: red;
+}
+.color2 {
+	color: white;
+}
+.color3 {
+	color: gray;
+}
+/*=============
+CAROUSEL STYLE
+===============*/
+
+/*Image Size for the Carousel*/
+.imageSize {
+	height: 30em;
+	width: auto;
+}
+
+.imageOpacity {
+	opacity: 0.5;
+}
+
+.carousel {
+    position:absolute;
+    top:0;    
+}
+.superpose {
+	background-color: black;
+
+}
+/*Text + button over the carousel*/
+.middleText {
+	position:relative;
+	text-align: center;	
+	margin-top: 12em;
+}
+
+	.middleText h6{
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+/*============
+NAV BAR
+==============*/
+.navbar {
+    position:absolute;
+    top: 6px;
+    z-index:10;
+    background:#fff;
+    width:100%;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+.contactBtn {
+	padding-left: 14em;
+}
+.homeBtn {
+	margin-left: 5em;
+}
+.genreBtn {
+	border-radius: 1px;
+}
+.searchBarPosition {
+	margin-right: 1.5em;
+}
+p {
+	font-size: 0.9em;
+}
+.trailerBtn {
+	padding: 0.3em 0.5em;
+	font-size: 0.9em;
+	border-radius: 1px;
+}
+.loupeIcone {
+	position: absolute;
+	padding-left: 240px;
+}
+.searchBar {
+	border-radius: 50px;
+	padding: 2px 35px; 
+}
+

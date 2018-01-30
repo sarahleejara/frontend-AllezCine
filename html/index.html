@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset= "utf-8">
     <title>AllezCiné</title>
+    <link rel="stylesheet" media="screen" href="media_queries.css" type="text/css" />
+<link rel="stylesheet" media="screen(700px)" href="media_queries.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/master.css">
@@ -92,45 +94,103 @@
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
+
+<!--================================
+NAVBAR
+====================================-->
+  <!-- ALLERCINE! Logo =================-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a class="navbar-brand" href="#">
+          <h1 class="col display-5 text-uppercase text-white font-weight-bold">
+            <span class="color1">Allez</span>Cine!</h1><!--Logo coin supérieur Droit--></a>
+    <!-- Home ==========================-->
+        <div class="collapse navbar-collapse homeBtn" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto"> <!-- List initialization-->
+            <li class="nav-item active">  
+              <a class="nav-link mt-2" href="#">
+                <span class="color1">Home</span>
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+    <!-- Genre =========================-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="btn btn-danger color2 genreBtn">Genre</span>
+              </a>
+      <!-- Dropdown Menu  ==============-->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Comedy</a>
+                  <a class="dropdown-item" href="#">Thriller</a>
+                  <a class="dropdown-item" href="#">Sci-fi</a>
+                  <a class="dropdown-item" href="#">Drama</a>
+                  <a class="dropdown-item" href="#">Adventure</a>
+                </div>
+            </li>
+      <!-- Contact =====================-->
+             <li class="nav-item active">  
+              <a class="nav-link mt-2" href="#">
+                <span class="contactBtn color2">Contact</span>
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul> <!-- List End -->
+      <!-- Empty Button ================-->  
+        
+
+  <!-- Search Bar ======================-->
+          <form class="form-inline my-2 my-lg-0 searchBarPosition">
+            <input class="form-control mr-sm-2 imageOpacity text-white bg-secondary searchBar" type="search" placeholder="Recherche" aria-label="Search" value="Recherche"></input>
+            <i class="fa fa-search color2 loupeIcone" aria-hidden="true"></i>
+          </form>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </nav>
+<!--=============================
+JUMBOTRON-CAROUSEL-SLIDER 
+=================================-->
+      
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators mb-5 pb-5">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+        <!--First Slide-->
+          <div class="carousel-inner superpose">
+            <div class="carousel-item active">
+              <img class="imageOpacity imageSize d-block w-100" src="../img/carouselImg/fantasy.jpg" alt="First slide">
+            </div>
+          <!--Second Slide-->
+          <div class="carousel-item">
+            <img class="imageOpacity imageSize d-block w-100" src="../img/carouselImg/turtle.jpg" alt="Second slide">
           </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <!--Third Slide-->
+          <div class="carousel-item">
+            <img class="imageOpacity imageSize d-block w-100" src="../img/carouselImg/horse-soldier.jpg" alt="Third slide">
           </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <!--Fourth Slide-->
+          <div class="carousel-item">
+            <img class="imageOpacity imageSize d-block w-100" src="../img/carouselImg/love.jpg" alt="Fourth slide">
           </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
       </div>
+    </header>
+
+<!--=============================
+MIDDLE TEXT
+=================================-->
+    <div class="middleText">
+      <h1 class="text-uppercase display-5 text-white">Latest 
+        <span class="color1">On</span>Line 
+        <span class="color1">Mo</span>vies
+      </h1> 
+        <p class="text-uppercase text-white">In space no one can ear you scream
+        </p>
+          <a class="btn btn-danger btn-lg trailerBtn text-uppercase" href="#role="button">Watch trailer</a>
     </div>
-    <div id="series"></div>
-    <div id="shop"></div>
-    <div id="contactus"></div>
-    <footer></footer>
+ 
+    <footer></footer> 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
