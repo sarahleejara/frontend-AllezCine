@@ -95,7 +95,7 @@ p {
   text-align: center;
   background-color: black;
   padding-bottom: 25px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .subscribe h3 {
   text-transform: uppercase;
@@ -116,13 +116,15 @@ p {
   font-size: 10px;
 }
 /* container */
-.container-footer {
-  display: flex;
-  flex-direction: row;
+.list-footer {
   background-color: black;
-  padding-left: 40px;
-  padding-right: 40px;
-  border-bottom: darkgrey 2px solid;
+}
+.list-footer h4 {
+color: white;
+font-size: 18px;
+}
+.list-footer li {
+  font-size: 12px;
 }
 .release-footer {
   width: 20%;
@@ -145,21 +147,21 @@ p {
   padding-right: 20px;
 }
 .review-movies-footer button {
-  padding: 5px;
-  margin: 0px;
+	background-color: rgba(192,192,192,0.2);
+	opacity: 50%;
+	font-size: 10px;
+	color: white;
+	border: black 1px solid;
+	padding: 5px;
+	margin: 0px;
 }
 .latest-movies {
-  display: flex;
   flex-direction: column;
-  width: 20%;
   padding-right: 20px;
   font-size: 10px;
   flex-wrap: wrap;
 }
 .latest-movies img {
-  display: flex;
-  flex-direction: row;
-  width: 80px;
   height: 50px;
   padding: 5px;
 }
@@ -174,23 +176,7 @@ p {
   width: 200px;
   height: 200px;
 }
-.container-footer h4 {
-color: white;
-font-size: 18px;
-border-bottom: darkgrey 2px solid;
-padding-bottom: 10px;
-}
-.container-footer li {
-  font-size: 12px;
-}
 
-.review-movies-footer button {
-  background-color: rgba(192,192,192,0.2);
-  opacity: 50%;
-  font-size: 10px;
-  color: white;
-  border: black 1px solid;
-}
 #red {
   color: red;
   font-size: 25px;
@@ -202,7 +188,6 @@ padding-bottom: 10px;
   color: white;
   font-size: 25px;
   text-transform: uppercase;
-  border-bottom: darkgrey 2px solid;
 }
 /* contact réseaux sociaux  */
 .connect-us {
@@ -263,6 +248,10 @@ padding-bottom: 10px;
 }
 .pad-tb-20{
   padding: 20px 0px;
+}
+hr{
+	background-color: lightgrey;
+	opacity: 0.5;
 }
 /*STYLING CODE*/
 
