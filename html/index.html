@@ -13,8 +13,8 @@
   <body>
     <header>
       <div class="relativeBox">
-      <!--================================ 
-        NAVBAR 
+      <!--================================
+        NAVBAR
       ====================================-->
       <!-- ALLERCINE! Logo =================-->
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
@@ -126,9 +126,9 @@
     <!-- SOCiAL MEDIA FIXED BUTTONS -->
     <div id="social">
       <ul>
-        <li><a href="https://facebook.com/">Facebook <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        <li><a href="https://twitter.com/">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li><a href="http://google.com/">Google <i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+        <li class="facebook"><a href="https://facebook.com/">Facebook <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li class="twitter"><a href="https://twitter.com/">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li class="google"><a href="http://google.com/">Google <i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
       </ul>
     </div>
     <div class="intro container-fluid">
@@ -136,6 +136,7 @@
       <a data-toggle="modal" data-target="#exampleModal">Login</a>
       <a href="#">Register</a>
     </div>
+    <!-- LOG IN MODAL -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -274,7 +275,7 @@
         </div>
       </div>
 
-      <button type="button" name="button" class="">Plus de films</button>
+      <button type="button" name="button" class="more">Plus de films</button>
 
     </div>
 
@@ -354,7 +355,7 @@
         </div>
       </div>
 
-      <button type="button" name="button" class="">Plus de films</button>
+      <button type="button" name="button" data-toggle="button" class="more">Plus de films</button>
     </div>
 
       <!-- Début de la box SHOP -->
@@ -427,6 +428,7 @@
         </div>
       </div>
     </div>
+    <!-- Début de la box CONTACT US -->
     <div id="contactus" class="container">
       <h3 class="borderleft">contact us</h3>
     </div>
@@ -435,7 +437,7 @@
     <footer>
       <!-- formulaire et bouton subscribe -->
       <div class="subscribe">
-        <h3>subscribe to us</h3>
+        <h4>subscribe to us</h4>
         <form>
           <div>
             <label for="subscribe"></label>
@@ -444,10 +446,10 @@
           </div>
         </form>
       </div>
-      <div class="list-footer d-flex justify-content-center">
-        <div class="container d-flex row justify-content-center align-items-center">
-          <div class="release-footer col">
-            <h4>Release</h4>
+      <div class="list-footer d-flex justify-content-center pb-3">
+        <div class="container d-flex row justify-content-center">
+          <div class="release col">
+            <h5>Release</h5>
             <hr>
             <ul>
               <li>2016</li>
@@ -459,7 +461,7 @@
             </ul>
           </div>
           <div class="movies-footer col">
-            <h4>Movies</h4>
+            <h5>Movies</h5>
             <hr>
             <ul>
               <li>ADVENTURE</li>
@@ -470,8 +472,8 @@
               <li>HORROR</li>
             </ul>
           </div>
-          <div class="review-movies-footer col">
-            <h4>Reviews Movies</h4>
+          <div class="review-movies col">
+            <h5>Reviews Movies</h5>
             <hr>
             <button type="button" name="Comedy">Comedy</button>
             <button type="button" name="Horror">Horror</button>
@@ -489,33 +491,34 @@
             <button type="button" name="Historical">Historical</button>
           </div>
           <div class="latest-movies col">
-            <h4>Latest Movies</h4>
+            <h5>Latest Movies</h5>
             <hr>
-            <div class="img-latest-movies">
+            <div class="row">
               <img src="../img/intouchables-2011-comedie.jpg" class="">
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="img-latest-movies">
+            <div class="row">
               <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="img-latest-movies">
+            <div class="row">
               <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="img-latest-movies">
+            <div class="row">
               <img src="../img/swissarmyman-2016-comedie.jpg" alt="">
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
-          <div class="allez-cine col">
-            <h6><div id="red">Allez</div>Cine</h6>
+          <div class="allezcine col">
+            <h4 class="red">Allez<span class="white">Cine!</span></h4>
             <hr>
-            <img src="../img/batmanmovie-2017-comedie.jpg" alt="image-film">
+            <img src="../img/batmanmovie-2017-comedie.jpg" alt="image-film" class="img-fluid">
           </div>
         </div>
       </div>
       <div class="connect-us">
+        <hr>
         <h5>Connect us</h5>
         <div class="container-sociaux">
           <div class="sociaux">

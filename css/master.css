@@ -103,60 +103,49 @@ h1 {
 /* subscribe form et bouton */
 .subscribe {
   text-align: center;
-  background-color: black;
-  padding-bottom: 25px;
-  padding-top: 50px;
+	padding: 5rem 0;
 }
-.subscribe h3 {
+.subscribe h4 {
   text-transform: uppercase;
   color: red;
-  font-size: 16px;
-  margin-bottom: 0px;
 }
 .subscribe button {
   font-size: 14px;
   background-color: red;
-  border: red;
+  border: none;
   color: white;
+	height: 27px;
 
 }
 .subscribe input {
-  width: 300px;
+  width: 350px;
   color: grey;
-  font-size: 10px;
+	height: 27px;
 }
 /* footer */
-.list-footer {
-  background-color: black;
+footer{
+	background-color: black;
 }
-.list-footer h4 {
+
+.list-footer h5 {
 color: white;
-font-size: 18px;
+text-transform: uppercase;
 }
 .list-footer li {
   font-size: 12px;
 }
-.release-footer {
-  width: 20%;
-  padding-right: 20px;
-}
-.release-footer ul {
+
+.release ul {
   list-style: none;
   padding-left: 0px;
 }
-.movies-footer {
-  width: 20%;
-  padding-right: 20px;
-}
+
 .movies-footer ul {
   list-style: none;
   padding-left: 0px;
 }
-.review-movies-footer {
-  width: 20%;
-  padding-right: 20px;
-}
-.review-movies-footer button {
+
+.review-movies button {
 	background-color: rgba(192,192,192,0.2);
 	opacity: 50%;
 	font-size: 10px;
@@ -175,29 +164,16 @@ font-size: 18px;
   height: 50px;
   padding: 5px;
 }
-.img-latest-movies {
-  display: flex;
-  flex-direction: row;
+.allezcine h4{
+	color: red;
+	font-weight: bold;
+	text-transform: uppercase;
 }
-.allez-cine {
-  width: 20%;
+.allezcine hr{
+	margin-top: 12px;
 }
-.allez-cine img {
-  width: 200px;
-  height: 200px;
-}
-
-#red {
-  color: red;
-  font-size: 25px;
-  text-transform: uppercase;
-}
-.allez-cine h6 {
-  display: flex;
-  flex-direction: row;
-  color: white;
-  font-size: 25px;
-  text-transform: uppercase;
+.white{
+	color: #FFF;
 }
 /* contact réseaux sociaux  */
 .connect-us {
@@ -206,7 +182,6 @@ font-size: 18px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: black;
   padding-top: 50px;
   color: white;
   padding-bottom: 20px;
@@ -215,7 +190,6 @@ font-size: 18px;
 .connect-us h5 {
   width: 100%;
   text-align: center;
-  border-top: darkgrey 2px solid;
   font-size: 23px;
 }
 .container-sociaux {
@@ -263,6 +237,9 @@ hr{
 	background-color: lightgrey;
 	opacity: 0.5;
 }
+.pad3{
+	padding: 3rem 0;
+}
 /*STYLING CODE*/
 
 h3{
@@ -281,6 +258,7 @@ h3{
   color: #FFF;
   padding: 5px;
 }
+
 /*Movie GENRE*/
 .comedie{
 
@@ -316,7 +294,7 @@ h3{
 }
 #social ul li {
   display: block;
-  margin: 10px 20px;
+  margin: 10px 25px;
   background: rgba(0, 0, 0, 0.5);
   width: 300px;
   text-align: right;
@@ -336,14 +314,14 @@ h3{
   -ms-transform: translate(110px, 0);
   -o-transform: translate(110px, 0);
   transform: translate(110px, 0);
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(35, 100, 192, 0.4);
 }
 #social ul li:hover a {
-  color: #000;
+  color: #FFF;
 }
 #social ul li:hover i {
-  color: #fff;
-  background: black;
+  color: black;
+  background: #FFF;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -ms-transition: all 1s;
@@ -364,7 +342,9 @@ h3{
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
 }
-
+.facebook{
+	background-color: blue;
+}
 /*FILMS*/
 .border{
   border-radius: 5px;
@@ -382,7 +362,8 @@ h3{
 #series{
 
 }
-
+#series button{
+}
 #shop{
 
 }
