@@ -125,7 +125,7 @@ h1 {
   color: grey;
   font-size: 10px;
 }
-/* container */
+/* footer */
 .list-footer {
   background-color: black;
 }
@@ -304,11 +304,6 @@ h3{
   left: 0;
   position: fixed;
   top: 150px;
-}
-
-#social {
-  position: fixed;
-  top: 20px;
 }
 
 #social ul {
