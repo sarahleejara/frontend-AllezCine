@@ -275,6 +275,7 @@ h3{
   position: fixed;
   top: 150px;
 	z-index: 2;
+	width: 0%;
 }
 
 #social ul {
@@ -341,17 +342,20 @@ h3{
 .facebook i{
 	padding: 8px 10px;
 }
+.twitter i, .google i, .dribbble i{
+	padding: 8px;
+}
 .twitter{
 	background-color: #0084b4;
-}
-.twitter i, .google i{
-	padding: 8px;
 }
 .google i{
 	font-size: 12px;
 }
 .google{
 	background-color: #db3236;
+}
+.dribbble{
+	background-color: #C73B6F;
 }
 /*FILMS*/
 .border{
