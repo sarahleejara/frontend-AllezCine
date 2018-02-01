@@ -181,51 +181,39 @@ text-transform: uppercase;
 }
 /* contact réseaux sociaux  */
 .connect-us {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding-top: 50px;
+  padding-top: 30px;
+	margin-top: 60px;
   color: white;
   padding-bottom: 20px;
+	border-top: 1px solid rgb(38, 41, 45);
 
 }
 .connect-us h5 {
-  width: 100%;
   text-align: center;
   font-size: 23px;
 }
-.container-sociaux {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    margin-left: 3.5%;
-    flex-wrap: wrap;
+.arrow-top{
+	position: fixed;
+	bottom: 10%;
+	right: 2%;
 }
+
  #monBouton {
-  display: fixed;
   color: white;
   text-decoration: none;
   border-radius: 50%;
   border: 2px red solid;
   background-color: black;
-  margin-left: 1100%;
+}
+.sociaux{
+	text-align: center;
 }
 
-.sociaux {
-  display: flex;
-  flex-direction: row;
-  padding: 15px;
-  border: white 1px solid;
-  width: 10px;
-  height: 10px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.sociaux i{
+	border: 1px solid grey;
+	padding: 7px 10px;
+	margin: 0 2px;
 }
-
 /*CODE SARAH LEE*/
 
 /*REUSABLE CODE*/
@@ -283,9 +271,10 @@ h3{
 /*RESEAUX SOCIAUX*/
 
 #social{
-  left: 0;
+  left: 0%;
   position: fixed;
   top: 150px;
+	z-index: 2;
 }
 
 #social ul {
@@ -294,15 +283,14 @@ h3{
   -moz-transform: translate(-270px, 0);
   -ms-transform: translate(-270px, 0);
   -o-transform: translate(-270px, 0);
-  transform: translate(-270px, 0);
+  transform: translate(-260px, 0);
 }
 #social ul li {
   display: block;
-  margin: 10px 25px;
-  background: rgba(0, 0, 0, 0.5);
+  margin: 10px;
   width: 300px;
   text-align: right;
-  padding: 10px;
+  padding: 8px;
   -webkit-border-radius: 0 30px 30px 0;
   -moz-border-radius: 0 30px 30px 0;
   border-radius: 0 30px 30px 0;
@@ -312,16 +300,18 @@ h3{
   -o-transition: all 1s;
   transition: all 1s;
 }
+#social ul li a{
+	color: #FFF;
+}
 #social ul li:hover {
-  -webkit-transform: translate(110px, 0);
-  -moz-transform: translate(110px, 0);
-  -ms-transform: translate(110px, 0);
-  -o-transform: translate(110px, 0);
-  transform: translate(110px, 0);
-  background: rgba(35, 100, 192, 0.4);
+	transform: translate(100px, 0);
+  -moz-transform: translate(100px, 0);
+  -ms-transform: translate(100px, 0);
+  -o-transform: translate(100px, 0);
+	-webkit-transform: translate(100px, 0);
 }
 #social ul li:hover a {
-  color: #FFF;
+	text-decoration: none;
 }
 #social ul li:hover i {
   color: black;
@@ -336,7 +326,6 @@ h3{
   margin-left: 10px;
   color: #000;
   background: #fff;
-  padding: 10px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -347,7 +336,22 @@ h3{
   transform: rotate(0deg);
 }
 .facebook{
-	background-color: blue;
+	background-color: #3b5998;
+}
+.facebook i{
+	padding: 8px 10px;
+}
+.twitter{
+	background-color: #0084b4;
+}
+.twitter i, .google i{
+	padding: 8px;
+}
+.google i{
+	font-size: 12px;
+}
+.google{
+	background-color: #db3236;
 }
 /*FILMS*/
 .border{

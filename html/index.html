@@ -107,7 +107,7 @@
       </header>
 
     <!-- Modal -->
-    <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -122,13 +122,13 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- SOCiAL MEDIA FIXED BUTTONS -->
     <div id="social">
       <ul>
-        <li class="facebook"><a href="https://facebook.com/">Facebook <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        <li class="twitter"><a href="https://twitter.com/">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li class="google"><a href="http://google.com/">Google <i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+        <li class="facebook"><a href="https://facebook.com/" target="_blank">Facebook <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li class="twitter"><a href="https://twitter.com/" target="_blank">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li class="google"><a href="http://google.com/" target="_blank">Google <i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
       </ul>
     </div>
     <div class="intro container-fluid">
@@ -141,26 +141,24 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <h5 class="modal-title" id="exampleModalLabel">Log in to your account</h5>
           </div>
           <div class="modal-body">
             <form>
               <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                <input type="text" class="form-control" id="recipient-name">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
               <div class="form-group">
-                <label for="message-text" class="col-form-label">Message:</label>
-                <textarea class="form-control" id="message-text"></textarea>
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
               </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Send message</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>
@@ -446,8 +444,8 @@
           </div>
         </form>
       </div>
-      <div class="list-footer d-flex justify-content-center pb-3">
-        <div class="container d-flex row justify-content-center">
+      <div class="list-footer d-flex justify-content-center pb-3 container">
+        <div class="row justify-content-center">
           <div class="release col">
             <h5>Release</h5>
             <hr>
@@ -517,27 +515,16 @@
           </div>
         </div>
       </div>
-      <div class="connect-us">
-        <hr>
+      <div class="connect-us container">
         <h5>Connect us</h5>
-        <div class="container-sociaux">
+        <div class="arrow-top"><button id="monBouton"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></button></div>
           <div class="sociaux">
             <i class="fa fa-facebook" aria-hidden="true"></i>
-          </div>
-          <div class="sociaux">
             <i class="fa fa-twitter" aria-hidden="true"></i>
-          </div>
-          <div class="sociaux">
             <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </div>
-          <div class="sociaux">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
             <i class="fa fa-google-plus" aria-hidden="true"></i>
           </div>
-          <div class="sociaux">
-            <i class="fa fa-google-plus" aria-hidden="true"></i>
-          </div>
-          <div><button id="monBouton"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></button></div>
-        </div>
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

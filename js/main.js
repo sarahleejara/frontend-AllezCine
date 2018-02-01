@@ -10,10 +10,11 @@ $(document).ready(function(){
 });
 $("#submitage").click(function(){
   var a = $("#Age").val();
-  if ( a <= 18){
-    $(this).hide();
+  if ( a >= 18){
+    $("#myModal").modal("hide");
   } else {
-    alert("I'm sorry you must be 18 to access this website.")
+    alert("I'm sorry you must be 18 to access this website.");
+    location.href="http://www.imdb.com/";
   }
 })
 // FOOTER ARROW
