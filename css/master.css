@@ -126,7 +126,9 @@ h1 {
 footer{
 	background-color: black;
 }
-
+.list-footer{
+	border-bottom: 1px solid;
+}
 .list-footer h5 {
 color: white;
 text-transform: uppercase;
