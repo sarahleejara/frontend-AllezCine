@@ -33,3 +33,8 @@ $(document).ready(function(){
  	else
     $('#monBouton').fadeOut("slow");
  });
+
+// GENRE BUTTONS
+
+// $("#adventure-tab").click(function(){
+// });

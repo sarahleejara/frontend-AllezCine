@@ -232,7 +232,9 @@ hr{
 .pad3{
 	padding: 3rem 0;
 }
-
+.p-b2{
+	padding-bottom: 2rem;
+}
 /*STYLING CODE*/
 
 h3{
