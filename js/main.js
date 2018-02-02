@@ -16,14 +16,16 @@ $("#submitage").click(function(){
     alert("I'm sorry you must be 18 to access this website.");
     location.href="http://www.imdb.com/";
   }
-})
+});
 // FOOTER ARROW
     $(function(){
     	$("#monBouton").click(function(){
         	$("html, body").animate({scrollTop: 0},"slow");
         });
     });
-
+$(document).ready(function(){
+  $("#monBouton").hide();
+});
     $(window).scroll(function(){
  	posScroll = $(document).scrollTop();
  	if(posScroll >=300)

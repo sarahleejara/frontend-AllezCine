@@ -13,7 +13,7 @@ MEDIA QUERIES
 MEDIA QUERIES FOOTER
 ==============*/
 
-@media (max-width: 450px) {
+/*@media (max-width: 450px) {
 #monBouton {
 margin-left: 0px;
 }
@@ -28,4 +28,4 @@ display: none;
 .allez-cine img {
 display: none;
 }
-}
+}*/
