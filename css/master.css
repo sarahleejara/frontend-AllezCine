@@ -101,6 +101,199 @@ h1 {
 
 /*=================================*/
 
+/*CODE SARAH LEE*/
+
+/*REUSABLE CODE*/
+
+.borderleft {
+  border-left: 5px solid #EF3054;
+  padding: 5px 10px;
+}
+.pad-tb-20 {
+  padding: 20px 0px;
+}
+hr{
+	background-color: lightgrey;
+	opacity: 0.5;
+}
+.pad3{
+	padding: 3rem 0;
+}
+.p-b2{
+	padding-bottom: 2rem;
+}
+.hide{
+	visibility: hidden;
+	position: absolute;
+}
+/*STYLING CODE*/
+
+h3{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.intro{
+  background-color: #EF3054;
+  color: #FFF;
+  padding: 7px;
+  padding-left: 20px;
+  font-size: 12px;
+}
+.intro a {
+  background-color: black;
+  color: #FFF;
+  padding: 5px;
+}
+
+/*Movie GENRE*/
+.comedie{
+
+}
+.thriller{
+
+}
+.sci-fi{
+
+}
+.drama{
+
+}
+.adventure{
+
+}
+
+/*RESEAUX SOCIAUX*/
+
+#social{
+  left: 0%;
+  position: fixed;
+  top: 150px;
+	z-index: 2;
+	width: 0%;
+}
+
+#social ul {
+  padding: 0px;
+  -webkit-transform: translate(-270px, 0);
+  -moz-transform: translate(-270px, 0);
+  -ms-transform: translate(-270px, 0);
+  -o-transform: translate(-270px, 0);
+  transform: translate(-260px, 0);
+}
+#social ul li {
+  display: block;
+  margin: 10px;
+  width: 300px;
+  text-align: right;
+  padding: 8px;
+  -webkit-border-radius: 0 30px 30px 0;
+  -moz-border-radius: 0 30px 30px 0;
+  border-radius: 0 30px 30px 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+#social ul li a{
+	color: #FFF;
+}
+#social ul li:hover {
+	transform: translate(100px, 0);
+  -moz-transform: translate(100px, 0);
+  -ms-transform: translate(100px, 0);
+  -o-transform: translate(100px, 0);
+	-webkit-transform: translate(100px, 0);
+}
+#social ul li:hover a {
+	text-decoration: none;
+}
+#social ul li:hover i {
+  color: #343633;
+  background: #FFF;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+#social ul li i {
+  margin-left: 10px;
+  color: #343633;
+  background: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.facebook{
+	background-color: #3b5998;
+}
+.facebook i{
+	padding: 8px 10px;
+}
+.twitter i, .google i, .dribbble i{
+	padding: 8px;
+}
+.twitter{
+	background-color: #0084b4;
+}
+.google i{
+	font-size: 12px;
+}
+.google{
+	background-color: #db3236;
+}
+.dribbble{
+	background-color: #C73B6F;
+}
+/*FILMS*/
+.morefilms, .lessfilms, .moreseries, .lessseries{
+	text-align: center;
+}
+.morefilms button, .send button, .lessfilms button, .moreseries button, .lessseries button{
+	text-transform: uppercase;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 14px;
+	background-color: #EF3054;
+	border: 1px solid #EF3054;
+	padding: 8px 10px;
+}
+.border{
+  border-radius: 5px;
+}
+#films{
+  padding: 20px;
+}
+#films h7, p{
+  margin: 0;
+}
+#movies nav, #series nav{
+	padding: 0 2rem 2rem 2rem;
+}
+.tab-content{
+	text-align: center;
+}
+#movies img, #series img, #shop img, #films img{
+	width: 95%;
+}
+
+#contactus .row{
+	padding: 10px 0;
+}
+
+#contactus textarea{
+	padding: 10px;
+}
+#contactus form{
+	padding: 10px 0;
+}
+
 /*FOOTER CSS*/
 /* subscribe form et bouton */
 .subscribe {
@@ -198,7 +391,7 @@ text-transform: uppercase;
 	right: 2%;
 }
 
- #monBouton {
+ #toparrow {
   color: white;
   text-decoration: none;
   border-radius: 50%;
@@ -213,176 +406,4 @@ text-transform: uppercase;
 	border: 1px solid grey;
 	padding: 7px 10px;
 	margin: 0 2px;
-}
-/*CODE SARAH LEE*/
-
-/*REUSABLE CODE*/
-
-.borderleft {
-  border-left: 5px solid #EF3054;
-  padding: 5px 10px;
-}
-.pad-tb-20 {
-  padding: 20px 0px;
-}
-hr{
-	background-color: lightgrey;
-	opacity: 0.5;
-}
-.pad3{
-	padding: 3rem 0;
-}
-.p-b2{
-	padding-bottom: 2rem;
-}
-/*STYLING CODE*/
-
-h3{
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.intro{
-  background-color: #EF3054;
-  color: #FFF;
-  padding: 7px;
-  padding-left: 20px;
-  font-size: 12px;
-}
-.intro a {
-  background-color: black;
-  color: #FFF;
-  padding: 5px;
-}
-
-/*Movie GENRE*/
-.comedie{
-
-}
-.thriller{
-
-}
-.sci-fi{
-
-}
-.drama{
-
-}
-.adventure{
-
-}
-
-/*RESEAUX SOCIAUX*/
-
-#social{
-  left: 0%;
-  position: fixed;
-  top: 150px;
-	z-index: 2;
-	width: 0%;
-}
-
-#social ul {
-  padding: 0px;
-  -webkit-transform: translate(-270px, 0);
-  -moz-transform: translate(-270px, 0);
-  -ms-transform: translate(-270px, 0);
-  -o-transform: translate(-270px, 0);
-  transform: translate(-260px, 0);
-}
-#social ul li {
-  display: block;
-  margin: 10px;
-  width: 300px;
-  text-align: right;
-  padding: 8px;
-  -webkit-border-radius: 0 30px 30px 0;
-  -moz-border-radius: 0 30px 30px 0;
-  border-radius: 0 30px 30px 0;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-}
-#social ul li a{
-	color: #FFF;
-}
-#social ul li:hover {
-	transform: translate(100px, 0);
-  -moz-transform: translate(100px, 0);
-  -ms-transform: translate(100px, 0);
-  -o-transform: translate(100px, 0);
-	-webkit-transform: translate(100px, 0);
-}
-#social ul li:hover a {
-	text-decoration: none;
-}
-#social ul li:hover i {
-  color: black;
-  background: #FFF;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-}
-#social ul li i {
-  margin-left: 10px;
-  color: #000;
-  background: #fff;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-.facebook{
-	background-color: #3b5998;
-}
-.facebook i{
-	padding: 8px 10px;
-}
-.twitter i, .google i, .dribbble i{
-	padding: 8px;
-}
-.twitter{
-	background-color: #0084b4;
-}
-.google i{
-	font-size: 12px;
-}
-.google{
-	background-color: #db3236;
-}
-.dribbble{
-	background-color: #C73B6F;
-}
-/*FILMS*/
-.border{
-  border-radius: 5px;
-}
-#films{
-  padding: 20px;
-}
-#films h7, p{
-  margin: 0;
-}
-#movies{
-
-}
-
-#series{
-
-}
-#series button{
-}
-#shop{
-
-}
-
-#contactus{
-
 }

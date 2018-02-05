@@ -19,22 +19,57 @@ $("#submitage").click(function(){
 });
 // FOOTER ARROW
     $(function(){
-    	$("#monBouton").click(function(){
+    	$("#toparrow").click(function(){
         	$("html, body").animate({scrollTop: 0},"slow");
         });
     });
 $(document).ready(function(){
-  $("#monBouton").hide();
+  $("#toparrow").hide();
 });
     $(window).scroll(function(){
  	posScroll = $(document).scrollTop();
  	if(posScroll >=300)
- 		$('#monBouton').fadeIn("slow");
+ 		$('#toparrow').fadeIn("slow");
  	else
-    $('#monBouton').fadeOut("slow");
+    $('#toparrow').fadeOut("slow");
  });
+
+// SEND MESSAGE
+$(".send button").click(function(){
+  alert("Your message hase been sent.");
+  location.reload();
+});
+
+// MORE FILMS
+$('.morefilms').click(function(){
+  $(".row-three").toggleClass("hide");
+  $(".morefilms").toggleClass("hide");
+  $(".lessfilms").toggleClass("hide");
+});
+$('.lessfilms').click(function(){
+  $(".row-three").toggleClass("hide");
+  $(".lessfilms").toggleClass("hide");
+  $(".morefilms").toggleClass("hide");
+});
+
+// MORE SERIES
+$('.moreseries').click(function(){
+  $(".row3").toggleClass("hide");
+  $(".moreseries").toggleClass("hide");
+  $(".lessseries").toggleClass("hide");
+});
+$('.lessseries').click(function(){
+  $(".row3").toggleClass("hide");
+  $(".lessseries").toggleClass("hide");
+  $(".moreseries").toggleClass("hide");
+});
 
 // GENRE BUTTONS
 
-// $("#adventure-tab").click(function(){
+// $("#movies-adventure").click(function(){
+//   if (a === ".adventure") {
+//     return a;
+//   } else {
+//     return null;
+//   }
 // });
