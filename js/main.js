@@ -51,11 +51,6 @@ $("#submitage").click(function(){
   }
 });
 
-// TRAILER MODAL
-// $('#trailer').click(function () {
-//         $('#Modaltrailer').modal('show');
-//     });
-
 // FOOTER ARROW
     $(function(){
     	$("#toparrow").click(function(){
@@ -102,13 +97,3 @@ $('.lessseries').click(function(){
   $(".lessseries").toggleClass("hide");
   $(".moreseries").toggleClass("hide");
 });
-
-// GENRE BUTTONS
-
-// $("#movies-adventure").click(function(){
-//   if (a === ".adventure") {
-//     return a;
-//   } else {
-//     return null;
-//   }
-// });

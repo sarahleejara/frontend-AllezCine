@@ -7,4 +7,25 @@
     "genre" : "Fantasy/Science fiction",
     "price" : "15,00€",
   }
+  {
+    "title" : "The Mummy",
+    "image" : "the-mummy-movie-poster-sm.jpg"
+    "genre" : "Thriller/Action",
+    "year" : "2017",
+    "tralier" : "https://www.youtube.com/watch?v=GzorZUuZqEI",
+  }
+  {
+    "title" : "The Dark Tower",
+    "image" : "the-dark-tower-movie-poster-sm.jpg",
+    "genre" : "Sci-Fi",
+    "year" : "2017,"
+    "trailer" : "https://www.youtube.com/embed/GjwfqXTebIY",
+  }
+  {
+    "title" : "The maze runner 3",
+    "image" : "maze-runner-the-scorch-trials-poster-sm.jpg",
+    "genre" : "Sci-Fi",
+    "year" : "2018",
+    "trailer" : "https://www.youtube.com/watch?v=4-BTxXm8KSg",
+  }
 ]
