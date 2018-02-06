@@ -1,3 +1,36 @@
+// COOKIE
+var cookieBar = {
+  closeAfter: 5000, //ms
+  cookieBar: null,
+
+  init: function() {
+    this.createCookieBar();
+  },
+
+  createCookieBar: function() {
+    this.cookieBar = "<div id='cookieBar' class='bar'>This website uses cookies to provide the best experience, by using this site you are agreeing to our <a href='#'>cookie policy</a>.</div>";
+    this.showCookieBar();
+  },
+
+  showCookieBar: function() {
+    $('body').prepend(this.cookieBar);
+    this.cookieBar = $('#cookieBar');
+    this.cookieBar.hide().slideDown('slow');
+    this.autoClose();
+  },
+
+  autoClose: function() {
+    setTimeout(function(){
+      this.cookieBar.slideUp('slow');
+    }.bind(this), this.closeAfter);
+  }
+
+};
+
+$(function() {
+  cookieBar.init();
+});
+
 // ENTRY MODAL
 $(document).ready(function(){
   // Show the Modal on load
@@ -17,6 +50,12 @@ $("#submitage").click(function(){
     location.href="http://www.imdb.com/";
   }
 });
+
+// TRAILER MODAL
+// $('#trailer').click(function () {
+//         $('#Modaltrailer').modal('show');
+//     });
+
 // FOOTER ARROW
     $(function(){
     	$("#toparrow").click(function(){

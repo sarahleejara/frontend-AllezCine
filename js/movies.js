@@ -1,74 +1,26 @@
 var movies = [
   {
-    image: "batmanmovie-2017-comedie.jpg";
-    title: "Batman Movie";
-    genre: "Comedie";
-    year: "2017" ;
+    "trailer" : "https://www.youtube.com/embed/h6DOpfJzmo0",
+    "movie title" : "Batman Movie",
   }
   {
-    image: ;
-    title: "The Two Towers";
-    genre: "Adventure";
-    year: "2002";
+    "trailer" : "https://www.youtube.com/embed/r5X-hFf6Bwo",
+    "movie title" : "Lord of the Ring: The Two Towers",
   }
   {
-    image: ;
-    title: "Inception";
-    genre: "Sci-Fi";
-    year: "2010";
+    "trailer" : "https://www.youtube.com/embed/8hP9D6kZseM",
+    "movie title" : "Inception",
   }
   {
-    image: ;
-    title: "Intouchables";
-    genre: "Comedie";
-    year: "2011";
+    "trailer" : "https://www.youtube.com/embed/NXR6Whv9WBA",
+    "movie title" : "Intouchables",
   }
   {
-    image: ;
-    title: "The English Patient";
-    genre: "Drama";
-    year: "1996";
+    "trailer" : "https://www.youtube.com/embed/N1OopmufwUo",
+    "movie title" : "The English Patient",
   }
   {
-    image: ;
-    title: "Seven";
-    genre: "Thriller";
-    year: "1995";
+    "trailer" : "https://www.youtube.com/embed/jIM4-HLtUM0",
+    "movie title" : "King Arthur",
   }
-  {
-    image: ;
-    title: ;
-    genre: ;
-    year: ;
-  }
-  {
-    image: ;
-    title: ;
-    genre: ;
-    year: ;
-  }
-  {
-    image: ;
-    title: ;
-    genre: ;
-    year: ;
-  }
-  {
-    image: ;
-    title: ;
-    genre: ;
-    year: ;
-  }
-  {
-    image: ;
-    title: ;
-    genre: ;
-    year: ;
-  }
-  {
-    image: ;
-    title: ;
-    genre: ;
-    year: ;
-  }
-];
+]

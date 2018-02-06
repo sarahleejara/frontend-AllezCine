@@ -144,7 +144,18 @@ h3{
   color: #FFF;
   padding: 5px;
 }
-
+.bar{
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background: #a2a2a2;
+  color: #fff;
+  font: 14px arial, sans-serif;
+}
+.bar a {
+	text-decoration: none;
+	color: #09f;
+}
 /*Movie GENRE*/
 .comedie{
 
@@ -269,6 +280,7 @@ h3{
 }
 #films{
   padding: 20px;
+	text-align: center;
 }
 #films h7, p{
   margin: 0;
@@ -276,11 +288,13 @@ h3{
 #movies nav, #series nav{
 	padding: 0 2rem 2rem 2rem;
 }
+#films img, #movies img, #shop img{
+	overflow: hidden;
+	position: relative;
+}
+
 .tab-content{
 	text-align: center;
-}
-#movies img, #series img, #shop img, #films img{
-	width: 95%;
 }
 
 #contactus .row{
