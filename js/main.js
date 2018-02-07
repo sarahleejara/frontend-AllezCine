@@ -74,6 +74,20 @@ $(".send button").click(function(){
   location.reload();
 });
 
+// SHOP FEATURES
+let shop = "https://sarahleejara.github.io/frontend-AllezCine/js/shop.js";
+let shopdatarequest = new XMLHttpRequest();
+
+let whendataloadshop = function(){
+  let shopdata = shopdatarequest.shop;
+}
+
+function displayShopdata(){
+
+}
+function createShopFeature(){
+
+}
 // MORE FILMS
 $('.morefilms').click(function(){
   $(".row-three").toggleClass("hide");
@@ -97,3 +111,6 @@ $('.lessseries').click(function(){
   $(".lessseries").toggleClass("hide");
   $(".moreseries").toggleClass("hide");
 });
+
+shopdatarequest.onload = whendataloadshop;
+shopdatarequest.open("GET", shop, true)
