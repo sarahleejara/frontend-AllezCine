@@ -150,8 +150,7 @@
     "price" : "15,00€",
     "date" : "March 22, 2018 ",
     "year" : "2018",
-    "story" : "Jake Pentecost is a once-promising Jaeger pilot whose legendary father gave his life to secure humanity's victory against the monstrous Kaiju. Jake has since abandoned his training only to become caught up in a criminal underworld. But when an even more unstoppable threat is unleashed to tear through cities and bring the world to its knees, Jake is given one last chance by his estranged sister, Mako Mori, to live up to his father's legacy.
-",
+    "story" : "Jake Pentecost is a once-promising Jaeger pilot whose legendary father gave his life to secure humanity's victory against the monstrous Kaiju. Jake has since abandoned his training only to become caught up in a criminal underworld. But when an even more unstoppable threat is unleashed to tear through cities and bring the world to its knees, Jake is given one last chance by his estranged sister, Mako Mori, to live up to his father's legacy.",
     "trailer" : ""
   },
   {
@@ -174,7 +173,7 @@
     "date" : "November 6, 2013",
     "year" : "2013",
     "story" : "When hostile aliens called the Formics attack Earth, only the legendary heroics of Mazer Rackham (Ben Kingsley) manage to attain a victory. To prepare for the next attack, Col. Hyrum Graff (Harrison Ford) and his cohorts initiate a military program to find the next Mazer. Recruit Ender Wiggin (Asa Butterfield) exhibits an unusual gift for the training, easily mastering all of the challenges thrown at him. Mazer Rackham, himself, takes Ender as a protege to prepare him for the oncoming war.",
-    "trailer" : ""
+    "trailer" : "https://www.youtube.com/embed/2YAl_fd_ElE"
   },
   {
     "id" : "17",
@@ -185,7 +184,7 @@
     "date" : "March 17, 2016",
     "year" : "2016",
     "story" : "Tris (Shailene Woodley) escapes with Four (Theo James) to journey beyond the wall that encloses Chicago. For the first time, they leave the only city and family they have ever known to find a peaceful solution. Once outside, they learn shocking new truths that render old discoveries meaningless. As the ruthless battle threatens humanity, Tris and Four quickly decide who to trust to survive. Tris must ultimately make difficult choices about courage, allegiance, sacrifice and love.",
-    "trailer" : ""
+    "trailer" : "https://www.youtube.com/embed/MJsDuGRiLqM"
   },
   {
     "id" : "18",
@@ -196,6 +195,6 @@
     "date" : "February 17 2017",
     "year" : "2017",
     "story" : "",
-    "trailer" : ""
+    "trailer" : "https://www.youtube.com/embed/ChpLV9AMq"
   }
 ]
