@@ -99,34 +99,19 @@ function displayShopdata(data, parent, idPrefix, start = 0, numberElement = 8){
 
 function createShopFeature(data, parent, idPrefix){
   let shopid = idPrefix + '-' + data['id']; // we construct the HTML id of this movie
-  let HTMLContent = '<div class="col-12 col-sm-6 col-md-6 col-lg-3 card shop-item" id="' + shopid + '"><div class="container-item"></div></div>'; // we open the div, insert class and ID
+  let HTMLContent = '<div class="card shop-item" id="' + shopid + '"><div class="container-item"></div></div>'; // we open the div, insert class and ID
   $(HTMLContent).appendTo($(parent)); // we add our HTML content to the parent
   $('#' + shopid).attr({ // we insert some data-attribute
     'data-id': data['id']
   });
-  $('<img src="../img/' + data['image'] + '" class="image card-img-top img-fluid" title="' + data['title'] + '">').appendTo($('#' + shopid + ' .container-item'));
+  $('<img src="../img/' + data['image'] + '" class="image card-img-top" title="' + data['title'] + '">').appendTo($('#' + shopid + ' .container-item'));
   $('<div class="card-body"></div>').appendTo($('#' + shopid + ' .container-item'));
   $('<h5 class="card-title">' + data['title'] + '</h5>').appendTo($('#' + shopid + ' .card-body'));
   $('<div class="card-subtitle"></div>').appendTo($('#' + shopid + ' .card-body'));
   $('<div class="card-subtitle-item year">' + data['year'] + '</div><div class="card-subtitle-item price">' + data['price'] + ' €</div>').appendTo($('#' + shopid + ' .card-subtitle'));
 }
 
-// function createHTMLItemInformationInMovieShop(dataItem, parent) {
-//   $('<div class="row trailer-row"></div>').appendTo($(parent));
-//   $('<div class="col-12 embed-responsive embed-responsive-16by9"></div>').appendTo($(parent + ' .trailer-row'));
-//   $('.trailer-row .col-12').html('<iframe class="embed-responsive-item" src="'dataItem['trailer'] + '" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
-//   $('<div class="row title-row"></div>').appendTo($(parent));
-//   $('<div class="col-12"></div>').appendTo($(parent + ' .title-row'));
-//   $('.title-row .col-12').html('<h4>' + dataItem['title'] + '</h4>');
-//   $('<div class="row story-row"></div>').appendTo($(parent));
-//   $('<div class="col-12 col-md-4">Story line</div><div class="col-12 col-md-8"><p>' + dataItem['story'] + '</p></div>').appendTo($(parent + ' .story-row'));
-//   $('<div class="row release-date-row"></div>').appendTo($(parent));
-//   $('<div class="col-12 col-md-4">Released date</div><div class="col-12 col-md-8"><p>' + dataItem['date'] + '</p></div>').appendTo($(parent + ' .release-date-row'));
-//   $('<div class="row genre-row"></div>').appendTo($(parent));
-//   $('<div class="col-12 col-md-4">Genre(s)</div><div class="col-12 col-md-8"><p>' + dataItem['genre'].join(', ') + '</p></div>').appendTo($(parent + ' .genre-row'));
-//   $('<div class="row price-row"></div>').appendTo($(parent));
-//   $('<div class="col-12 col-md-4">Price</div><div class="col-12 col-md-8"><p>' + dataItem['price'] + ' €</p></div>').appendTo($(parent + ' .price-row'));
-// }
+
 
 // MORE FILMS
 $('.morefilms').click(function(){

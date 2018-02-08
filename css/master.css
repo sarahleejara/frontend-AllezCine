@@ -405,3 +405,13 @@ text-transform: uppercase;
 	padding: 7px 10px;
 	margin: 0 2px;
 }
+.shop-item{
+	padding: 0;
+	margin: 5px;
+}
+.shop-item .card-img-top{
+	width: 100%;
+}
+.shop-item .card-body{
+	padding: 0;
+}
