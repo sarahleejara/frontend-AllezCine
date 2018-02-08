@@ -77,13 +77,15 @@ $(".send button").click(function(){
 // SHOP FEATURES
 
 let movies = "https://sarahleejara.github.io/frontend-AllezCine/database/movies.json";
+let series = "https://sarahleejara.github.io/frontend-AllezCine/database/tvseries.json";
+let numberElementShop = 8;
 let moviedatarequest = new XMLHttpRequest();
 
 let whendataloadshop = function(){
-  let movietext = shopdatarequest.responseText;
+  let movietext = moviedatarequest.responseText;
   moviedata = JSON.parse(movietext);
 
-  displayMovieInShop(moviedata, '#shop .list-movies > .row:first-of-type', 'shop', 0, numberElementShop);
+  displayShopdata(moviedata, '#shop .list-movies > .row:first-of-type', 'shop', 0, numberElementShop);
 }
 
 function displayShopdata(data, parent, idPrefix, start = 0, numberElement = 8){
