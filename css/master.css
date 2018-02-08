@@ -26,7 +26,7 @@ CAROUSEL STYLE
 
 /*Image Size for the Carousel*/
 .imageSize {
-	height: 30em;
+	height: 45em;
 	width: auto;
 }
 
@@ -46,7 +46,7 @@ CAROUSEL STYLE
 .middleText {
 	position: absolute;
   text-align: center;
-	margin-top: 12em;
+	margin-top: 17em;
   z-index: 2;
   left: 30%;
   right: 30%;
