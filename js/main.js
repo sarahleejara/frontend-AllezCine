@@ -79,13 +79,16 @@ $(".send button").click(function(){
 let movies = "https://sarahleejara.github.io/frontend-AllezCine/database/movies.json";
 let series = "https://sarahleejara.github.io/frontend-AllezCine/database/tvseries.json";
 let numberElementShop = 8;
+
 let moviedatarequest = new XMLHttpRequest();
+
+let moviedata;
 
 let whendataloadshop = function(){
   let movietext = moviedatarequest.responseText;
   moviedata = JSON.parse(movietext);
 
-  displayShopdata(moviedata, '#shop .list-movies > .row:first-of-type', 'shop', 0, numberElementShop);
+  displayShopdata(moviedata, '#shop .list-movies > .row', 'shop', 0, numberElementShop);
 }
 
 function displayShopdata(data, parent, idPrefix, start = 0, numberElement = 8){
@@ -95,11 +98,11 @@ function displayShopdata(data, parent, idPrefix, start = 0, numberElement = 8){
 }
 
 function createShopFeature(data, parent, idPrefix){
-  let shopid = idPrefix + '-' + data['ID']; // we construct the HTML id of this movie
-  let HTMLContent = '<div class="col-12 col-sm-6 col-md-6 col-lg-3 card movie-item" id="' + shopid + '"><div class="container-item"></div></div>'; // we open the div, insert class and ID
+  let shopid = idPrefix + '-' + data['id']; // we construct the HTML id of this movie
+  let HTMLContent = '<div class="col-12 col-sm-6 col-md-6 col-lg-3 card shop-item" id="' + shopid + '"><div class="container-item"></div></div>'; // we open the div, insert class and ID
   $(HTMLContent).appendTo($(parent)); // we add our HTML content to the parent
   $('#' + shopid).attr({ // we insert some data-attribute
-    'data-id': data['ID']
+    'data-id': data['id']
   });
   $('<img src="img/' + data['image'] + '" class="image card-img-top img-fluid" title="' + data['title'] + '>').appendTo($('#' + shopid + ' .container-item'));
   $('<div class="card-body"></div>').appendTo($('#' + shopid + ' .container-item'));
@@ -134,3 +137,4 @@ $('.lessseries').click(function(){
 
 moviedatarequest.onload = whendataloadshop; // we assign the function to excecute when the data are loading
 moviedatarequest.open("GET", movies, true);
+moviedatarequest.send(null);
