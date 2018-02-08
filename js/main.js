@@ -78,33 +78,33 @@ $(".send button").click(function(){
 
 let movies = "https://sarahleejara.github.io/frontend-AllezCine/database/movies.json";
 let moviedatarequest = new XMLHttpRequest();
-// 
-// let whendataloadshop = function(){
-//   let movietext = shopdatarequest.responseText;
-//   moviedata = JSON.parse(movietext);
-//
-//   displayMovieInShop(moviedata, '#shop .list-movies > .row:first-of-type', 'shop', 0, numberElementShop);
-// }
-//
-// function displayShopdata(data, parent, idPrefix, start = 0, numberElement = 8){
-//   for (let i = start; i < (start + numberElement) && i < data.length; i++) {
-//     createShopFeature(data[i], parent, idPrefix);
-//   }
-// }
-//
-// function createShopFeature(data, parent, idPrefix){
-//   let shopid = idPrefix + '-' + data['ID']; // we construct the HTML id of this movie
-//   let HTMLContent = '<div class="col-12 col-sm-6 col-md-6 col-lg-3 card movie-item" id="' + shopid + '"><div class="container-item"></div></div>'; // we open the div, insert class and ID
-//   $(HTMLContent).appendTo($(parent)); // we add our HTML content to the parent
-//   $('#' + shopid).attr({ // we insert some data-attribute
-//     'data-id': data['ID']
-//   });
-//   $('<img src="img/' + data['image'] + '" class="image card-img-top img-fluid" title="' + data['title'] + '>').appendTo($('#' + shopid + ' .container-item'));
-//   $('<div class="card-body"></div>').appendTo($('#' + shopid + ' .container-item'));
-//   $('<h5 class="card-title">' + data['title'] + '</h5>').appendTo($('#' + shopid + ' .card-body'));
-//   $('<div class="card-subtitle"></div>').appendTo($('#' + shopid + ' .card-body'));
-//   $('<div class="card-subtitle-item year">' + data['year'] + '</div><div class="card-subtitle-item price">' + data['price'] + ' €</div>').appendTo($('#' + shopid + ' .card-subtitle'));
-// }
+
+let whendataloadshop = function(){
+  let movietext = shopdatarequest.responseText;
+  moviedata = JSON.parse(movietext);
+
+  displayMovieInShop(moviedata, '#shop .list-movies > .row:first-of-type', 'shop', 0, numberElementShop);
+}
+
+function displayShopdata(data, parent, idPrefix, start = 0, numberElement = 8){
+  for (let i = start; i < (start + numberElement) && i < data.length; i++) {
+    createShopFeature(data[i], parent, idPrefix);
+  }
+}
+
+function createShopFeature(data, parent, idPrefix){
+  let shopid = idPrefix + '-' + data['ID']; // we construct the HTML id of this movie
+  let HTMLContent = '<div class="col-12 col-sm-6 col-md-6 col-lg-3 card movie-item" id="' + shopid + '"><div class="container-item"></div></div>'; // we open the div, insert class and ID
+  $(HTMLContent).appendTo($(parent)); // we add our HTML content to the parent
+  $('#' + shopid).attr({ // we insert some data-attribute
+    'data-id': data['ID']
+  });
+  $('<img src="img/' + data['image'] + '" class="image card-img-top img-fluid" title="' + data['title'] + '>').appendTo($('#' + shopid + ' .container-item'));
+  $('<div class="card-body"></div>').appendTo($('#' + shopid + ' .container-item'));
+  $('<h5 class="card-title">' + data['title'] + '</h5>').appendTo($('#' + shopid + ' .card-body'));
+  $('<div class="card-subtitle"></div>').appendTo($('#' + shopid + ' .card-body'));
+  $('<div class="card-subtitle-item year">' + data['year'] + '</div><div class="card-subtitle-item price">' + data['price'] + ' €</div>').appendTo($('#' + shopid + ' .card-subtitle'));
+}
 
 // MORE FILMS
 $('.morefilms').click(function(){
