@@ -111,6 +111,23 @@ function createShopFeature(data, parent, idPrefix){
   $('<div class="card-subtitle-item year">' + data['year'] + '</div><div class="card-subtitle-item price">' + data['price'] + ' €</div>').appendTo($('#' + shopid + ' .card-subtitle'));
 }
 
+// function createHTMLItemInformationInMovieShop(dataItem, parent) {
+//   $('<div class="row trailer-row"></div>').appendTo($(parent));
+//   $('<div class="col-12 embed-responsive embed-responsive-16by9"></div>').appendTo($(parent + ' .trailer-row'));
+//   $('.trailer-row .col-12').html('<iframe class="embed-responsive-item" src="'dataItem['trailer'] + '" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+//   $('<div class="row title-row"></div>').appendTo($(parent));
+//   $('<div class="col-12"></div>').appendTo($(parent + ' .title-row'));
+//   $('.title-row .col-12').html('<h4>' + dataItem['title'] + '</h4>');
+//   $('<div class="row story-row"></div>').appendTo($(parent));
+//   $('<div class="col-12 col-md-4">Story line</div><div class="col-12 col-md-8"><p>' + dataItem['story'] + '</p></div>').appendTo($(parent + ' .story-row'));
+//   $('<div class="row release-date-row"></div>').appendTo($(parent));
+//   $('<div class="col-12 col-md-4">Released date</div><div class="col-12 col-md-8"><p>' + dataItem['date'] + '</p></div>').appendTo($(parent + ' .release-date-row'));
+//   $('<div class="row genre-row"></div>').appendTo($(parent));
+//   $('<div class="col-12 col-md-4">Genre(s)</div><div class="col-12 col-md-8"><p>' + dataItem['genre'].join(', ') + '</p></div>').appendTo($(parent + ' .genre-row'));
+//   $('<div class="row price-row"></div>').appendTo($(parent));
+//   $('<div class="col-12 col-md-4">Price</div><div class="col-12 col-md-8"><p>' + dataItem['price'] + ' €</p></div>').appendTo($(parent + ' .price-row'));
+// }
+
 // MORE FILMS
 $('.morefilms').click(function(){
   $(".row-three").toggleClass("hide");
